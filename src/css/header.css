@@ -1,0 +1,21 @@
+.header{
+    background-color:black ;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.navigation{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.bars{
+    height: 25px;
+    padding: 10px;
+    color: white;
+}

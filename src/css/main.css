@@ -1,0 +1,25 @@
+
+.main{
+    position: relative;
+}
+.background-img{
+    width: 100%;
+    z-index: -1;
+}
+.name{
+    font-size: 28px;
+    writing-mode: vertical-lr;
+    z-index: 1;
+    color: white;
+    display: inline;
+    position: absolute;
+    left:50%;
+    top: 30%;
+}
+.introduction{
+    position: absolute;
+    color: white;
+    width: 300px;
+    left:60%;
+    top: 40%;
+}

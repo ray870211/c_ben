@@ -1,0 +1,26 @@
+.photography{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow-x: scroll;
+    width: 100vw;
+}
+.photoItem{
+    position: relative;
+
+}
+.photoItem img{
+    width: 112px;
+    height: 773px;
+    object-fit: cover;
+    z-index: -1;
+}
+.photoItem div{
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    writing-mode: vertical-lr;
+}
