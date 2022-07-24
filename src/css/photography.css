@@ -2,13 +2,15 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    position: absolute;
     overflow-x: scroll;
     width: 100vw;
 }
 .photoItem{
     position: relative;
-
+    transition-duration: 0.3s;
+}
+.photoItem:hover{
+    transform:  translateY(20px);
 }
 .photoItem img{
     width: 112px;
