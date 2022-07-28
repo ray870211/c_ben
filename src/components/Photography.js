@@ -7,57 +7,56 @@ function Photography() {
   //set up 2 var ,that call [modalShow , setModalShow],and set default value = false
   //this hook on  Photography el
   const [modalShow, setModalShow] = useState(false);
-  const [modalTitle, setModalTitle] = useState("");
-
+  const [modalTitle, setModalTitle] = useState(["街舞", "dance"]);
   return (
     <div className='photography'>
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='街舞'
+        text={["街舞", "dance"]}
         image={require("../image/work/dance/main.jpg")}
       />
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='生活'
+        text={["生活", "life"]}
         image={require("../image/work/life/main.jpg")}
       />
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='房屋拍攝'
+        text={["房屋拍攝", "house"]}
         image={require("../image/work/house/main.jpg")}
       />
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='藝文活動紀錄'
+        text={["藝文活動紀錄", "art_activity"]}
         image={require("../image/work/art_activity/main.jpg")}
       />
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='人像外拍'
+        text={["人像外拍", "people"]}
         image={require("../image/work/people/main.jpg")}
       />
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='產品'
+        text={["產品", "product"]}
         image={require("../image/work/product/main.jpg")}
       />
       <PhotoItem
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
-        text='模型'
+        text={["模型", "toy"]}
         image={require("../image/work/toy/main.jpg")}
       />
       <AlbumModel modalTitle={modalTitle} show={modalShow} onHide={() => setModalShow(false)} />

@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 function WorkPage(props) {
   function buttonClick(e) {
     props.setCurrentPage("album");
-    props.setSelectedAlbum(props.selected.id);
+    props.setSelectedAlbum(props.selected.images);
   }
   return (
     <div className='work'>

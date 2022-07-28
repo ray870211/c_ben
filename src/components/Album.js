@@ -1,17 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // import "../css/Album.css";
 import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/esm/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import WorkData from "./WorkData";
 function Album(props) {
-  console.log(props);
+  console.log(props.selectedAlbum);
 
   function hideAlbum(e) {
     props.setCurrentPage("album");
   }
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant='top' src={props.selectedAlbum} />
-    </Card>
+    <Container>
+      <Row>
+        {Object.keys(props.selectedAlbum).map(function (key) {
+          return (
+            <Col key={key} className='p-1' xs={6} md={4}>
+              <Card className='m-2'>
+                <Card.Img className='mw-100 mh-100' variant='top' src={props.selectedAlbum[key]} />
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 }
 

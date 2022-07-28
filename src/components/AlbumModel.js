@@ -13,16 +13,17 @@ import Album from "./Album";
 function AlbumModel(props) {
   const [currentPage, setCurrentPage] = useState("WorkPage");
   const [selectedAlbum, setSelectedAlbum] = useState("");
+
   return (
     <Modal
-      fullscreen={true}
       {...props}
+      fullscreen={true}
       aria-labelledby='contained-modal-title-vcenter'
       size='sm'
       centered>
       <Modal.Header className='bg-dark' closeButton>
         {currentPage === "WorkPage" && (
-          <Modal.Title id='contained-modal-title-vcenter'>{props.modalTitle}</Modal.Title>
+          <Modal.Title id='contained-modal-title-vcenter'>{props.modalTitle[0]}</Modal.Title>
         )}
         {currentPage === "album" && (
           <button
@@ -37,42 +38,24 @@ function AlbumModel(props) {
         <Modal.Body className='bg-dark show-grid'>
           <Container fluid>
             <Row className='m-2'>
-              <Col xs={6} md={4}>
-                <WorkPage
-                  setCurrentPage={setCurrentPage}
-                  setSelectedAlbum={setSelectedAlbum}
-                  selected={WorkData.dance[1]}></WorkPage>
-              </Col>
-              <Col xs={6} md={4}>
-                <WorkPage
-                  setCurrentPage={setCurrentPage}
-                  setSelectedAlbum={setSelectedAlbum}
-                  selected={WorkData.dance[2]}></WorkPage>
-              </Col>
-              <Col xs={6} md={4}>
-                <WorkPage
-                  setCurrentPage={setCurrentPage}
-                  setSelectedAlbum={setSelectedAlbum}
-                  selected={WorkData.dance[3]}></WorkPage>
-              </Col>
-            </Row>
-            <Row className='m-2'>
-              <Col xs={6} md={4}>
-                <WorkPage
-                  setCurrentPage={setCurrentPage}
-                  setSelectedAlbum={setSelectedAlbum}
-                  selected={WorkData.dance[4]}></WorkPage>
-              </Col>
+              {Object.keys(WorkData[props.modalTitle[1]]).map(function (key) {
+                return (
+                  <Col xs={6} md={4}>
+                    <WorkPage
+                      key={key}
+                      setCurrentPage={setCurrentPage}
+                      setSelectedAlbum={setSelectedAlbum}
+                      selected={WorkData[props.modalTitle[1]][key]}></WorkPage>
+                  </Col>
+                );
+              })}
             </Row>
           </Container>
         </Modal.Body>
       )}
       {currentPage === "album" && (
         <Container fluid>
-          <Album
-            selectedAlbum={selectedAlbum}
-            // selected={WorkData.dance[4]}
-            setCurrentPage={setCurrentPage}></Album>
+          <Album selectedAlbum={selectedAlbum} setCurrentPage={setCurrentPage}></Album>
         </Container>
       )}
 
