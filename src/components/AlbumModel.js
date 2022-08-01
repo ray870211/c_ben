@@ -17,11 +17,12 @@ function AlbumModel(props) {
   return (
     <Modal
       {...props}
+      className='bg-white'
       fullscreen={true}
       aria-labelledby='contained-modal-title-vcenter'
       size='sm'
       centered>
-      <Modal.Header className='bg-dark' closeButton>
+      <Modal.Header className='bg-dark w-100' closeButton>
         {currentPage === "WorkPage" && (
           <Modal.Title id='contained-modal-title-vcenter'>{props.modalTitle[0]}</Modal.Title>
         )}

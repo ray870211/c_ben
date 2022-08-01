@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import WorkData from "./WorkData";
 function Album(props) {
   console.log(props.selectedAlbum);
 

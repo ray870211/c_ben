@@ -1,3 +1,7 @@
 .modal-title{
     color: white;
 }
+.main-modal{
+    background-color: aqua;
+    overflow: scroll;
+}
