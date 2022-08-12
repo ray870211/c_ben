@@ -1,4 +1,4 @@
-const folder = "./src/image/work/people/廢墟";
+const folder = "./src/image/work/product/模型";
 
 const fs = require("fs");
 var count = 0;

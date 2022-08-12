@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import Button from "react-bootstrap/Button";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import "../css/work-page.css";
 function WorkPage(props) {
@@ -9,17 +9,19 @@ function WorkPage(props) {
   }
   return (
     <div className='work'>
-      <Card style={{ width: "18rem" }}>
+      <Card className='m-2' style={{ width: "18rem" }}>
         <Card.Img
           onClick={buttonClick}
           className='main-img'
           variant='top'
           src={props.selected.cover}
         />
-        <Card.Body>
+        <h3 className='card-title'>{props.selected.title}</h3>
+        <p className='card-text'>{props.selected.text}</p>
+        {/* <Card.Body>
           <Card.Title>{props.selected.title}</Card.Title>
           <Card.Text>{props.selected.text}</Card.Text>
-        </Card.Body>
+        </Card.Body> */}
       </Card>
     </div>
   );

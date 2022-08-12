@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -10,6 +11,7 @@ import "../css/album-model.css";
 import WorkPage from "./WorkPage";
 import WorkData from "./WorkData";
 import Album from "./Album";
+// import LazyLoad from "vanilla-lazyload";
 function AlbumModel(props) {
   const [currentPage, setCurrentPage] = useState("WorkPage");
   const [selectedAlbum, setSelectedAlbum] = useState("");
@@ -17,22 +19,24 @@ function AlbumModel(props) {
   return (
     <Modal
       {...props}
-      className='bg-white'
-      fullscreen={true}
-      aria-labelledby='contained-modal-title-vcenter'
-      size='sm'
+      // show={show}
+      // onHide={() => setShow(false)}
+      dialogClassName='main-modal'
+      aria-labelledby='example-custom-modal-styling-title'
       centered>
       <Modal.Header className='bg-dark w-100' closeButton>
         {currentPage === "WorkPage" && (
           <Modal.Title id='contained-modal-title-vcenter'>{props.modalTitle[0]}</Modal.Title>
         )}
         {currentPage === "album" && (
-          <button
+          <FontAwesomeIcon
+            style={{ color: "white" }}
             onClick={() => {
               setCurrentPage("WorkPage");
-            }}>
-            <FontAwesomeIcon className='bars' icon={faAngleLeft} />
-          </button>
+            }}
+            className='bars'
+            icon={faAngleLeft}
+          />
         )}
       </Modal.Header>
       {currentPage === "WorkPage" && (
@@ -41,7 +45,7 @@ function AlbumModel(props) {
             <Row className='m-2'>
               {Object.keys(WorkData[props.modalTitle[1]]).map(function (key) {
                 return (
-                  <Col xs={6} md={4}>
+                  <Col xs={6} md={6} lg={4} xl={3}>
                     <WorkPage
                       key={key}
                       setCurrentPage={setCurrentPage}
@@ -60,8 +64,10 @@ function AlbumModel(props) {
         </Container>
       )}
 
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+      <Modal.Footer className='bg-dark'>
+        <button className='p-1 modal-close-btn' onClick={props.onHide}>
+          Close
+        </button>
       </Modal.Footer>
     </Modal>
   );

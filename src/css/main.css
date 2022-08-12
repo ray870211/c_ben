@@ -1,6 +1,8 @@
 
 .main{
     position: relative;
+    animation: fadein 5s 
+
 }
 .background-img{
     width: 100%;
@@ -22,4 +24,10 @@
     width: 300px;
     left:60%;
     top: 40%;
+}
+@keyframes fadein {
+    0% {opacity: 0;}
+  /* 50% {opacity: 0.5;} */
+  100% {opacity: 1;}
+
 }

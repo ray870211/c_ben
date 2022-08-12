@@ -9,8 +9,9 @@ function Photography() {
   const [modalShow, setModalShow] = useState(false);
   const [modalTitle, setModalTitle] = useState(["街舞", "dance"]);
   return (
-    <div className='photography'>
+    <div className='photography d-flex mb-5'>
       <PhotoItem
+        className='p-2'
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
@@ -18,6 +19,7 @@ function Photography() {
         image={require("../image/work/dance/main.jpg")}
       />
       <PhotoItem
+        className='p-2'
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
@@ -25,6 +27,7 @@ function Photography() {
         image={require("../image/work/life/main.jpg")}
       />
       <PhotoItem
+        className='p-2'
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
@@ -32,6 +35,7 @@ function Photography() {
         image={require("../image/work/house/main.jpg")}
       />
       <PhotoItem
+        className='p-2'
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
@@ -39,6 +43,7 @@ function Photography() {
         image={require("../image/work/art_activity/main.jpg")}
       />
       <PhotoItem
+        className='p-2'
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
@@ -46,19 +51,14 @@ function Photography() {
         image={require("../image/work/people/main.jpg")}
       />
       <PhotoItem
+        className='p-2'
         modalShow={modalShow}
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["產品", "product"]}
         image={require("../image/work/product/main.jpg")}
       />
-      <PhotoItem
-        modalShow={modalShow}
-        setModalShow={setModalShow}
-        setModalTitle={setModalTitle}
-        text={["模型", "toy"]}
-        image={require("../image/work/toy/main.jpg")}
-      />
+
       <AlbumModel modalTitle={modalTitle} show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );

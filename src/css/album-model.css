@@ -1,7 +1,23 @@
 .modal-title{
     color: white;
 }
+.modal-header .btn-close{
+    color: white;
+}
 .main-modal{
-    background-color: aqua;
-    overflow: scroll;
+    /* overflow: scroll; */
+    min-width: 90%;
+}
+.modal-close-btn{
+    transition-duration: 0.5s;
+    width: 50px;
+    border-radius: 10px;
+    border:1px solid white;
+    color: white;
+    background-color: rgb(28, 28, 28);
+
+}
+.modal-close-btn:hover{
+    background-color: #8C5626;
+    
 }

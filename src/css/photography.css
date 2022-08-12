@@ -1,12 +1,12 @@
 .photography{
-    background-color: black;
+    background-color: #1C1C1C;
     display: flex;
     justify-content: center;
     width: 100vw;
 }
 .photoItem{
     position: relative;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 .photoItem:hover{
     transform:  translateY(20px);
@@ -16,6 +16,11 @@
     height: 773px;
     object-fit: cover;
     z-index: -1;
+    transition: 1s;
+    filter:grayscale(1)
+}
+.photoItem img:hover{
+    filter:grayscale(0)
 }
 .photoItem div{
     color: white;
