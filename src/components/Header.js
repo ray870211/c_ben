@@ -38,10 +38,7 @@ function Header() {
       <a href='' className='navigation'>
         聯絡我們
       </a>
-      <a href='' className='navigation'>
-        {/* 聯絡我們 */}
-      </a>
-      {/* <FontAwesomeIcon className='bars' icon={faBars} /> */}
+      <a href='' className='navigation'></a>
     </div>
   );
 }
