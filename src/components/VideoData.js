@@ -13,7 +13,7 @@ export const VideoData = [
   },
   {
     id: 2,
-    url: require("../video/調光調色/22.07.11_調色2.mov"),
+    url: require("../video/調光調色/22.07.11_調色2.mp4"),
     preview: require("../video/preview/22.07.11_2.png"),
     text: "TimeLine",
   },
