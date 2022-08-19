@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "../../node_modules/video-react/dist/video-react.css";
 import { Player } from "video-react";
