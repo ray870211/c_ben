@@ -1,33 +1,97 @@
-
-.main{
-    position: relative;
-    animation: fadein 5s 
-
+@font-face {
+  font-family: NotoSansTC;
+  src: url("./font/NotoSansTC-Bold.otf") format("opentype");
 }
-.background-img{
-    width: 100%;
-    z-index: -1;
-}
-.name{
-    font-size: 28px;
-    writing-mode: vertical-lr;
-    z-index: 1;
-    color: white;
-    display: inline;
+@media (max-width: 575.99px) {
+  .introduction {
+    background-color: rgb(145, 145, 145, 0.2);
     position: absolute;
-    left:50%;
+    padding: 12px;
+    size: 12px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    left: 60%;
+    top: 20%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .introduction {
+    background-color: rgb(145, 145, 145, 0.2);
+    position: absolute;
+    padding: 20px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    width: 400px;
+    left: 10%;
+    top: 10%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .introduction {
+    background-color: rgb(145, 145, 145, 0.2);
+    position: absolute;
+    padding: 20px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    width: 550px;
+    left: 30%;
     top: 30%;
+  }
 }
-.introduction{
-    position: absolute;
-    color: white;
-    width: 300px;
-    left:60%;
-    top: 40%;
-}
-@keyframes fadein {
-    0% {opacity: 0;}
-  /* 50% {opacity: 0.5;} */
-  100% {opacity: 1;}
 
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .introduction {
+    background-color: rgb(145, 145, 145, 0.2);
+    padding: 20px;
+    position: absolute;
+    size: 16px;
+    color: white;
+    width: 600px;
+    left: 30%;
+    top: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduction {
+    background-color: rgb(145, 145, 145, 0.2);
+    position: absolute;
+    padding: 20px;
+    color: white;
+    width: 600px;
+    left: 20%;
+    top: 20%;
+  }
+}
+.main {
+  position: relative;
+  font-family: NotoSansTC;
+  animation: fadein 5s;
+}
+
+.background-img {
+  width: 100%;
+  z-index: -1;
+}
+.name {
+  font-size: 28px;
+  writing-mode: vertical-lr;
+  z-index: 1;
+  color: white;
+  display: inline;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  /* 50% {opacity: 0.5;} */
+  100% {
+    opacity: 1;
+  }
 }

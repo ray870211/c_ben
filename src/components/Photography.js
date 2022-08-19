@@ -16,6 +16,7 @@ function Photography() {
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["街舞", "dance"]}
+        loading='lazy'
         image={require("../image/work/dance/main.jpg")}
       />
       <PhotoItem
@@ -24,6 +25,7 @@ function Photography() {
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["生活", "life"]}
+        loading='lazy'
         image={require("../image/work/life/main.jpg")}
       />
       <PhotoItem
@@ -32,6 +34,7 @@ function Photography() {
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["房屋拍攝", "house"]}
+        loading='lazy'
         image={require("../image/work/house/main.jpg")}
       />
       <PhotoItem
@@ -40,6 +43,7 @@ function Photography() {
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["藝文活動紀錄", "art_activity"]}
+        loading='lazy'
         image={require("../image/work/art_activity/main.jpg")}
       />
       <PhotoItem
@@ -48,6 +52,7 @@ function Photography() {
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["人像外拍", "people"]}
+        loading='lazy'
         image={require("../image/work/people/main.jpg")}
       />
       <PhotoItem
@@ -56,6 +61,7 @@ function Photography() {
         setModalShow={setModalShow}
         setModalTitle={setModalTitle}
         text={["產品", "product"]}
+        loading='lazy'
         image={require("../image/work/product/main.jpg")}
       />
 

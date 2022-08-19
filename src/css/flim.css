@@ -1,27 +1,30 @@
-.preview{
-    max-width: 100%;
-    max-height: 100%;
-    
-    transition: 1s;
+.preview {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  transition: 1s;
+}
+.preview-wrapper {
+  position: relative;
+}
+.play-icon {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+.film .text {
+  color: white;
+  text-align: center;
 }
 
-.play-icon{
-    color: white;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    z-index:1;
-    opacity: 0;
-    transition: 1s;
+.preview:hover {
+  -webkit-filter: brightness(50%);
 }
-.text{
-    color:white;
-    text-align:center;
-}
-
-.preview:hover{
-    -webkit-filter: brightness(50%);
-}
-.preview:hover + .play-icon{
-    opacity: 1;
+.preview:hover + .play-icon {
+  opacity: 1;
 }

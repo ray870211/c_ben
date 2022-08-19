@@ -15,7 +15,7 @@ function PhotoModel(props) {
         dialogClassName='modal-90w'
         aria-labelledby='example-custom-modal-styling-title'>
         <Modal.Body className='d-flex justify-content-center'>
-          <img style={style} src={props.photo} alt='Human'></img>
+          <img loading='lazy' style={style} src={props.photo} alt='Human'></img>
         </Modal.Body>
       </Modal>
     </>

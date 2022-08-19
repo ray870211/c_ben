@@ -7,7 +7,7 @@ function PhotoItem(props) {
   }
   return (
     <div className='photoItem m-2' onClick={photoClick}>
-      <img alt='' src={props.image} />
+      <img loading='lazy' alt='' src={props.image} />
       <div>{props.text[0]}</div>
     </div>
   );

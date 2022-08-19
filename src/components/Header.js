@@ -1,11 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 function Header() {
+  const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (window.scrollY > 50) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className='header'>
+    <div className={isScroll ? "header change" : "header"}>
       <img alt='' src={require("../image/logo-w.png")} className='logo'></img>
       <a href='' className='navigation'>
         HOME
@@ -22,7 +39,10 @@ function Header() {
       <a href='' className='navigation'>
         聯絡我們
       </a>
-      <FontAwesomeIcon className='bars' icon={faBars} />
+      <a href='' className='navigation'>
+        {/* 聯絡我們 */}
+      </a>
+      {/* <FontAwesomeIcon className='bars' icon={faBars} /> */}
     </div>
   );
 }

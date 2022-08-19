@@ -19,14 +19,17 @@ function Film() {
       <Row className='mb-2'>
         {VideoData.map((video) => (
           <Col
-            className='position-relative'
+            className='text-center'
             onClick={() => showVideo(video.url)}
             xs={4}
             md={4}
             lg={4}
             xl={4}>
-            <img className='preview' src={video.preview}></img>
-            <FontAwesomeIcon className='bars play-icon' icon={faPlay} />
+            <div className='preview-wrapper'>
+              <img className='preview' src={video.preview}></img>
+              <FontAwesomeIcon className='bars play-icon' icon={faPlay} />
+            </div>
+
             <p className='text'>{video.text}</p>
           </Col>
         ))}
