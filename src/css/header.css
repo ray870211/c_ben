@@ -1,3 +1,8 @@
+@media (max-width: 575.99px) {
+  .navigation {
+    display: none;
+  }
+}
 .header {
   background-color: #b9610e;
   display: flex;
