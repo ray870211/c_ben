@@ -1,7 +1,7 @@
 export const VideoData = [
   {
     id: 0,
-    url: require("../video/預告.mp4"),
+    url: require("../video/test.mp4"),
     preview: require("../video/preview/trailer.png"),
     text: "TimeLine",
   },

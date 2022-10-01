@@ -1,56 +1,23 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* ---- .element-item ---- */
-  .album-container{
-    -webkit-animation: scale-up-ver-top 2s 1s;
-	        animation: scale-up-ver-top 2s 1s;
-  }
-  .element-item {
-    position: relative;
-    float: left;
-    width: 32%;
-    /* height: 300px; */
-    
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-  
-  .element-item > * {
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-  .photo{
-    display: block;
-    max-width: 100%;
-  }
 
-
- @-webkit-keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
+/* ---- .element-item ---- */
+.album-container {
 }
-@keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
+.element-item {
+  position: relative;
+  float: left;
+  width: 32%;
+  /* height: 300px; */
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.photo {
+  display: block;
+  max-width: 100%;
 }
