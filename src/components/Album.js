@@ -44,7 +44,7 @@ function Album(props) {
         itemSelector: ".element-item",
         gutter: 0,
       });
-    }, 4000);
+    }, 500);
     return (
       <Container className='album-container'>
         <Row>

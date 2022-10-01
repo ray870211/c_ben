@@ -11,9 +11,7 @@ import WorkPage from "./WorkPage";
 import WorkData from "./WorkData";
 import Album from "./Album";
 // import LazyLoad from "vanilla-lazyload";
-const aaa = () => {
-  console.log("Sdf");
-};
+
 function AlbumModel(props) {
   const [currentPage, setCurrentPage] = useState("WorkPage");
   const [selectedAlbum, setSelectedAlbum] = useState("");
