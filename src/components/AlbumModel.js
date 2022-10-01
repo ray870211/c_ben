@@ -11,6 +11,9 @@ import WorkPage from "./WorkPage";
 import WorkData from "./WorkData";
 import Album from "./Album";
 // import LazyLoad from "vanilla-lazyload";
+const aaa = () => {
+  console.log("Sdf");
+};
 function AlbumModel(props) {
   const [currentPage, setCurrentPage] = useState("WorkPage");
   const [selectedAlbum, setSelectedAlbum] = useState("");
@@ -23,7 +26,12 @@ function AlbumModel(props) {
       dialogClassName='main-modal'
       aria-labelledby='example-custom-modal-styling-title'
       centered>
-      <Modal.Header className='bg-dark w-100' closeButton>
+      <Modal.Header
+        className='bg-dark w-100'
+        closeButton
+        onHide={() => {
+          setCurrentPage("WorkPage");
+        }}>
         {currentPage === "WorkPage" && (
           <Modal.Title id='contained-modal-title-vcenter'>{props.modalTitle[0]}</Modal.Title>
         )}
