@@ -7,11 +7,14 @@
     background-color: rgb(145, 145, 145, 0.2);
     position: absolute;
     padding: 12px;
-    size: 8px;
+    font-size: 1px;
     color: rgb(255, 255, 255);
-    width: 400px;
+    width: 100%;
     left: 0%;
     top: 0%;
+  }
+  .introduction p {
+    display: none;
   }
 }
 
@@ -20,9 +23,9 @@
     background-color: rgb(145, 145, 145, 0.2);
     position: absolute;
     padding: 20px;
-    font-size: 12px;
+    font-size: 6px;
     color: rgb(255, 255, 255);
-    width: 400px;
+    width: 100%;
     left: 10%;
     top: 10%;
   }
@@ -33,7 +36,7 @@
     background-color: rgb(145, 145, 145, 0.2);
     position: absolute;
     padding: 20px;
-    font-size: 14px;
+    font-size: 1px;
     color: rgb(255, 255, 255);
     width: 550px;
     left: 30%;

@@ -60,7 +60,7 @@ function AboutMe() {
   };
   return (
     <div className='about-me mb-5 '>
-      <img style={{ width: "100%" }} src={require("../image/DSC02879.png")}></img>
+      <img src={require("../image/DSC02879.png")}></img>
       <div className='about-me-content '>
         <Row className='justify-content-center'>
           <Col className='text-center'>

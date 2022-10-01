@@ -9,7 +9,7 @@ function WorkPage(props) {
   }
   return (
     <div className='work'>
-      <Card className='m-2' style={{ width: "18rem" }}>
+      <Card className='m-2'>
         <Card.Img
           onClick={buttonClick}
           className='main-img'

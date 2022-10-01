@@ -50,7 +50,7 @@ function AlbumModel(props) {
             <Row className='m-2'>
               {Object.keys(WorkData[props.modalTitle[1]]).map(function (key) {
                 return (
-                  <Col xs={6} md={6} lg={4} xl={3}>
+                  <Col xs={4} md={6} lg={4} xl={3}>
                     <WorkPage
                       key={key}
                       setCurrentPage={setCurrentPage}

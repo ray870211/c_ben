@@ -11,10 +11,8 @@ function PhotographyIntroduction() {
           border: "0",
           borderTop: "1px solid rgb(255,255,255)",
         }}></hr>
-      <p style={{ color: "white" }} className='w-50'>
-        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-        an unknown of Lorem Ipsum.
+      <p style={{ color: "white", textAlign: "center" }} className='w-50'>
+        CBen
       </p>
       <hr
         style={{

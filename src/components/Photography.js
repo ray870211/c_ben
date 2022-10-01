@@ -13,7 +13,7 @@ function Photography() {
   return (
     <div className='photography d-flex mb-5'>
       <Row>
-        <Col xs={2} md={2}>
+        <Col xs={4} md={2}>
           <PhotoItem
             className='p-2'
             modalShow={modalShow}
@@ -24,7 +24,7 @@ function Photography() {
             image={require("../image/work/dance/main.jpg")}
           />
         </Col>
-        <Col xs={2} md={2}>
+        <Col xs={4} md={2}>
           <PhotoItem
             className='p-2'
             modalShow={modalShow}
@@ -35,7 +35,7 @@ function Photography() {
             image={require("../image/work/life/main.jpg")}
           />
         </Col>
-        <Col xs={2} md={2}>
+        <Col xs={4} md={2}>
           <PhotoItem
             className='p-2'
             modalShow={modalShow}
@@ -46,7 +46,7 @@ function Photography() {
             image={require("../image/work/house/main.jpg")}
           />
         </Col>
-        <Col xs={2} md={2}>
+        <Col xs={4} md={2}>
           <PhotoItem
             className='p-2'
             modalShow={modalShow}
@@ -57,7 +57,7 @@ function Photography() {
             image={require("../image/work/art_activity/main.jpg")}
           />
         </Col>
-        <Col xs={2} md={2}>
+        <Col xs={4} md={2}>
           <PhotoItem
             className='p-2'
             modalShow={modalShow}
@@ -68,7 +68,7 @@ function Photography() {
             image={require("../image/work/people/main.jpg")}
           />
         </Col>
-        <Col xs={2} md={2}>
+        <Col xs={4} md={2}>
           <PhotoItem
             className='p-2'
             modalShow={modalShow}
