@@ -23,4 +23,16 @@ export const VideoData = [
     preview: require("../video/preview/version3.png"),
     text: "TimeLine",
   },
+  {
+    id: 4,
+    url: require("../video/Drive Your Dream.mp4"),
+    preview: require("../video/preview/version3.png"),
+    text: "Drive Your Dream",
+  },
+  {
+    id: 5,
+    url: require("../video/墾丁大道上奔馳著重量級重.mp4"),
+    preview: require("../video/preview/version3.png"),
+    text: "墾丁大道上奔馳著重量級重",
+  },
 ];
